@@ -1,0 +1,113 @@
+Claro. Aqui está a Atividade 2 – Divisibilidade, MDC e MMC, já em um único bloco para você copiar e colar:
+
+DOCUMENTO DA ATIVIDADE 2 – DIVISIBILIDADE, MDC E MMC
+
+1. IDENTIFICAÇÃO
+
+Nome: Felipe Baines de Cicco Lima
+Matrícula: 2612130051
+Disciplina: Estruturas Matemáticas para Computação
+Turno: Matutino
+
+2. PROBLEMA
+
+O programa deve solicitar ao usuário dois números inteiros positivos e realizar operações relacionadas à divisibilidade.
+
+O programa deve calcular a divisão inteira (DIV), o resto da divisão (MOD), apresentar o passo a passo do Algoritmo de Euclides, calcular o MDC e calcular o MMC dos dois números.
+
+
+3. PROCEDIMENTO MATEMÁTICO
+
+Foram utilizados os conceitos de divisão inteira, resto da divisão, MDC e MMC.
+
+A divisão inteira (DIV) determina quantas vezes o segundo número cabe no primeiro sem considerar a parte decimal.
+
+O resto da divisão (MOD) representa o valor que sobra após realizar a divisão inteira.
+
+Para calcular o MDC, foi utilizado o Algoritmo de Euclides. O procedimento consiste em dividir o primeiro número pelo segundo, obter o resto e, em seguida, utilizar o segundo número e o resto como os novos valores. Esse processo é repetido até que o resto seja igual a zero. O último número diferente de zero é o MDC.
+
+O MMC foi calculado utilizando a relação entre os dois números e o MDC:
+
+MMC = (número 1 × número 2) / MDC
+
+4. IMPLEMENTAÇÃO
+
+Na implementação, os dois números são recebidos pelo usuário e convertidos para inteiros.
+
+O programa verifica se os números informados são positivos. Caso algum número seja menor ou igual a zero, uma mensagem de erro é apresentada e o usuário deve informar os valores novamente.
+
+A divisão inteira foi realizada utilizando o operador // e o resto da divisão utilizando o operador %.
+
+Para o Algoritmo de Euclides, foi utilizado um laço while que continua executando enquanto o segundo número for diferente de zero. A cada repetição, o programa apresenta a operação realizada, mostrando o dividendo, divisor, quociente e resto.
+
+Após o término do algoritmo, o valor restante é utilizado como MDC.
+
+5. TESTES
+
+Foram realizados testes com diferentes valores para verificar o funcionamento do programa.
+
+Teste 1
+
+Entrada:
+
+Primeiro número: 35
+Segundo número: 4
+
+Resultado:
+
+Div = 8
+Mod = 3
+
+35 = 4 × 8 + 3
+4 = 3 × 1 + 1
+3 = 1 × 3 + 0
+
+MDC de Euclides = 1
+MMC = 140
+
+Teste 2
+
+Entrada:
+
+Primeiro número: 48
+Segundo número: 18
+
+Resultado:
+
+Div = 2
+Mod = 12
+
+48 = 18 × 2 + 12
+18 = 12 × 1 + 6
+12 = 6 × 2 + 0
+
+MDC de Euclides = 6
+MMC = 144
+
+Teste 3
+
+Entrada:
+
+Primeiro número: 12
+Segundo número: 4
+
+Resultado:
+
+Div = 3
+Mod = 0
+
+12 = 4 × 3 + 0
+
+MDC de Euclides = 4
+MMC = 12
+
+6. RESULTADOS
+
+Os testes realizados apresentaram os resultados esperados.
+
+O programa calculou corretamente a divisão inteira e o resto da divisão. O passo a passo do Algoritmo de Euclides também foi apresentado corretamente, permitindo visualizar as divisões realizadas até que o resto fosse igual a zero.
+
+Nos testes realizados, os valores do MDC e do MMC foram calculados corretamente.
+
+O programa também possui uma verificação para impedir a utilização de números negativos ou iguais a zero, pois a atividade solicita números inteiros positivos.
+

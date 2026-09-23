@@ -1,0 +1,108 @@
+Claro. Aqui está tudo em um único bloco, pronto para você copiar e colar no documento da Atividade 1:
+
+DOCUMENTO DA ATIVIDADE 1 – TEORIA DOS CONJUNTOS
+
+1. IDENTIFICAÇÃO
+
+Nome: Felipe Baines de Cicco Lima
+Matrícula: 2612130051
+Disciplina: Estruturas Matemáticas para Computação
+Turno: Matutino
+
+
+2. PROBLEMA
+
+O programa deve solicitar ao usuário dois conjuntos, A e B, e realizar operações da Teoria dos Conjuntos utilizando esses mesmos conjuntos.
+
+O programa deve calcular a união, a interseção, as diferenças A - B e B - A, as cardinalidades de A, B, A ∪ B e A ∩ B, os conjuntos das partes de A e B, suas respectivas cardinalidades, apresentar um exemplo de partição, calcular o produto cartesiano A × B e verificar se A ⊆ B e B ⊆ A.
+
+
+3. PROCEDIMENTO MATEMÁTICO
+
+Foram utilizados conceitos da Teoria dos Conjuntos.
+
+A união reúne todos os elementos de A e B, sem repetir elementos.
+
+A interseção apresenta os elementos que pertencem simultaneamente a A e B.
+
+As diferenças A - B e B - A apresentam, respectivamente, os elementos que pertencem somente a A e somente a B.
+
+A cardinalidade representa a quantidade de elementos de um conjunto.
+
+O conjunto das partes de um conjunto é formado por todos os seus subconjuntos. Para um conjunto com n elementos, sua cardinalidade é 2ⁿ.
+
+A partição divide um conjunto em partes que não possuem elementos em comum e cuja união forma o conjunto original.
+
+O produto cartesiano A × B é formado por todos os pares ordenados (a,b), em que a pertence a A e b pertence a B.
+
+Por fim, foi verificada a inclusão dos conjuntos, verificando se todos os elementos de A pertencem a B e se todos os elementos de B pertencem a A.
+
+
+4. IMPLEMENTAÇÃO
+
+Na implementação, os conjuntos foram armazenados utilizando set da linguagem Python.
+
+Os elementos são recebidos pelo usuário separados por espaços, convertidos para números inteiros e armazenados nos conjuntos A e B.
+
+Foram utilizados comandos de repetição for para percorrer os elementos dos conjuntos e comandos condicionais if para realizar as verificações necessárias.
+
+O conjunto das partes foi construído adicionando novos elementos aos subconjuntos já existentes.
+
+O produto cartesiano foi realizado utilizando dois laços de repetição, percorrendo cada elemento de A e cada elemento de B.
+
+A verificação de inclusão foi realizada percorrendo os elementos de cada conjunto e verificando se eles pertenciam ao outro conjunto.
+
+
+5. TESTES
+
+Foram realizados testes com diferentes relações entre os conjuntos.
+
+Teste 1 – A contido em B
+
+Entrada:
+
+A = {1, 2, 3}
+B = {1, 2, 3, 4, 5}
+
+Resultado da inclusão:
+
+A está contido em B: SIM
+B está contido em A: NÃO
+
+
+Teste 2 – A igual a B
+
+Entrada:
+
+A = {1, 2, 3, 4}
+B = {1, 2, 3, 4}
+
+Resultado da inclusão:
+
+A está contido em B: SIM
+B está contido em A: SIM
+
+
+Teste 3 – Conjuntos sem elementos em comum
+
+Entrada:
+
+A = {1, 2, 3}
+B = {4, 5, 6}
+
+Resultado da inclusão:
+
+A está contido em B: NÃO
+B está contido em A: NÃO
+
+
+6. RESULTADOS
+
+Os testes realizados apresentaram os resultados esperados.
+
+No primeiro teste, foi identificado corretamente que A está contido em B. No segundo, os dois conjuntos foram reconhecidos como iguais, portanto cada um está contido no outro. No terceiro, como não existem elementos em comum, nenhum dos conjuntos está contido no outro.
+
+Também foram verificadas corretamente as operações de união, interseção, diferenças, cardinalidades, conjuntos das partes, partição e produto cartesiano.
+
+O programa apresentou os resultados corretamente para os diferentes casos testados.
+
